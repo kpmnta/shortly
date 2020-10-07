@@ -59,7 +59,10 @@ nav li a,
 
 .landing {
     display: flex;
-    margin: 50px 0;
+    justify-content: space-between;
+    width: 960px;
+    padding: 50px 0;
+    margin: 0 auto;
 }
 
 .landing img {
@@ -90,14 +93,14 @@ nav li a,
 
 .container-box {
     width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
     display: table;
 }
 
 .box {
     display: table-cell;
-    width: 85%;
     height: 120px;
-    margin: 0 auto;
     text-align: center;
     background-color: var(--color-icon);
     background-image: url(../images/bg-shorten-desktop.svg);
@@ -121,6 +124,10 @@ nav li a,
     border-radius: 5px;
     border: none;
     cursor: pointer;
+}
+
+.advanced {
+    background-color: var(--color-lighter-background);
 }
 
 .attribution {
