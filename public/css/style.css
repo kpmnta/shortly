@@ -1,5 +1,5 @@
 :root {
-    --color-lighter-background: hsl(0, 0%, 75%);
+    --color-lighter-background: hsl(0, 0%, 95%);
     --color-darker-background:hsl(260, 8%, 14%);
     --color-button: hsl(180, 66%, 49%);
     --color-icon: hsl(257, 27%, 26%);
@@ -29,18 +29,18 @@
     margin-top: 15px;
 }
 
-nav,
+nav ul,
 .login {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-nav img {
+nav ul img {
     max-width: 100%;
 }
 
-nav li a,
+nav ul li a,
 .login a {
     color: var(--color-primary-text);
     padding-right: 25px;
@@ -66,7 +66,11 @@ nav li a,
 }
 
 .landing img {
-    max-width: 100%;
+    max-width: 55%;
+}
+
+.content {
+    width: 450px;
 }
 
 .content h1 {
@@ -96,6 +100,8 @@ nav li a,
     max-width: 960px;
     margin: 0 auto;
     display: table;
+    position: relative;
+    z-index: 10;
 }
 
 .box {
@@ -106,6 +112,7 @@ nav li a,
     background-image: url(../images/bg-shorten-desktop.svg);
     border-radius: 10px;
     vertical-align: middle;
+    
 }
 
 .box form input {
@@ -128,6 +135,102 @@ nav li a,
 
 .advanced {
     background-color: var(--color-lighter-background);
+    position: relative;
+    float: top;
+    top: -60px;
+    padding-bottom: 80px;
+}
+
+.advanced h2 {
+    padding-top: 150px;
+    color: var(--color-secondary-text);
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.advanced h5 {
+    font-weight: 500;
+    color: var(--color-primary-text);
+    max-width: 380px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.list-details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    padding-bottom: 40px;
+    margin-bottom: 50px;
+}
+
+.list-details li {
+    background-color: var(--color-primary-text-button);
+}
+
+.list-details p {
+    font-weight: 500;
+    font-size: 0.8rem;
+    max-width: 280px;
+    color: var(--color-primary-text);
+    padding: 20px;
+    line-height: 1.4rem;
+}
+
+.list-details h5 {
+    text-align: left;
+    padding-left: 20px;
+    color: var(--color-secondary-text);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.card-icon {
+    position: relative;
+    top: -35px;
+    background-color: var(--color-icon);
+    padding: 15px;
+    margin-left: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius:50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;   
+}
+
+.list-details li img {
+    width: 45px;
+}
+
+.middle {
+    position: relative;
+    bottom: -35px;
+}
+
+.middle::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 7px;
+    margin: -120px -40px;
+    background: var(--color-button);
+}
+
+.middle::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 7px;
+    margin: 105px 280px;
+    background: var(--color-button);
+}
+
+.last {
+    position: relative;
+    bottom: -70px;
 }
 
 .attribution {
