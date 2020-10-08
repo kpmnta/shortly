@@ -2,6 +2,7 @@
     --color-lighter-background: hsl(0, 0%, 95%);
     --color-darker-background:hsl(260, 8%, 14%);
     --color-button: hsl(180, 66%, 49%);
+    --color-button-hover: hsl(180, 59%, 70%);
     --color-icon: hsl(257, 27%, 26%);
     --color-error: hsl(0, 87%, 67%);
     --color-primary-text-button: hsl(0, 100%, 100%);
@@ -46,6 +47,11 @@ nav ul li a,
     padding-right: 25px;
     font-weight: 700;
     font-size: 0.8rem;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--color-secondary-text);
 }
 
 .signup {
@@ -54,7 +60,11 @@ nav ul li a,
     display: inline-block;
     padding: 10px 20px;
     border-radius: 25px;
+    transition: 0.3s;
+}
 
+.signup:hover {
+    background-color: var(--color-button-hover);
 }
 
 .landing {
@@ -92,6 +102,11 @@ nav ul li a,
     display: inline-block;
     padding: 10px 30px;
     border-radius: 25px;
+    transition: 0.3s;
+}
+
+.content a:hover {
+    background-color: var(--color-button-hover);
 }
 
 .container-box {
@@ -131,6 +146,11 @@ nav ul li a,
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.box form button:hover {
+    background-color: var(--color-button-hover);
 }
 
 .advanced {
@@ -251,6 +271,11 @@ nav ul li a,
     padding: 10px 30px;
     border-radius: 25px;
     margin-top: 15px;
+    transition: 0.3s;
+}
+
+.boost a:hover {
+    background-color: var(--color-button-hover);
 }
 
 footer {
@@ -278,8 +303,17 @@ footer li a {
     font-size: 0.8rem;
 }
 
+footer li a:hover {
+    color: var(--color-button);
+}
+
 span img {
     padding: 8px;
+    transition: 0.3s;
+}
+
+span img:hover {
+    filter: invert(60%) sepia(27%) saturate(970%) hue-rotate(131deg) brightness(135%) contrast(132%);
 }
 
 .container-footer {
