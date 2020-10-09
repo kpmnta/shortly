@@ -1,0 +1,126 @@
+@media screen and (max-width: 600px) {
+
+    .container {
+        width: 100vw;
+        max-width: 599px;
+    }
+
+    .landing {
+        width: 100vw;
+        flex-wrap: wrap-reverse;
+    }
+
+    .landing img {
+        max-width: 75%;
+        margin: 0 auto;
+    }
+
+    .content {
+        max-width: 85%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .container-box {
+        width: 85%;
+    }
+
+    .box form input {
+        width: 85%;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .box form button {
+        width: 85%;
+    }
+
+    .list-details {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .card-icon {
+        right: -140px;
+    }
+
+    .list-details h5 {
+        text-align: center;
+    }
+
+    .list-details li {
+        width: 375px;
+        margin: 0 auto;
+    }
+
+    .list-details p {
+        margin: 0 auto;
+        max-width: 85%;
+    }
+
+    .advanced ul li:not(:last-child) {
+        margin-bottom: 25px;
+    }
+
+    .middle::after {
+        content: "";
+        position: absolute;
+        width: 7px;
+        height: 24.5px;
+        margin: -284px 5px;
+        background: var(--color-button);
+    }
+    
+    .middle::before {
+        content: "";
+        position: absolute;
+        width: 7px;
+        height: 26px;
+        margin: 225px 5px;
+        background: var(--color-button);
+    }
+
+    .container-footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center
+    }
+
+    .container-footer ul {
+        padding: 10px;
+    }
+
+    .container-footer img {
+        margin: 0 auto;
+    }
+
+    nav ul li:not(:first-child),
+    .log,
+    .signup{
+        display: none;
+    }
+
+    .fas {
+      float: right;
+      display: block;
+      cursor: pointer;
+      padding: 5px;
+    }
+
+    .menu.responsive {
+        position: relative;
+    }
+
+    .fas.responsive {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    nav ul li.responsive {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+}

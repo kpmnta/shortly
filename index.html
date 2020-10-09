@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="icon" type="image/png" sizes="32x32" href="public/images/favicon-32x32.png">
+    <script src="https://kit.fontawesome.com/476d3c02b7.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/mobile.css">
     <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
 
 </head>
 <body>
     <main>
-        <div class="container menu">
+        <div id="navbar" class="container menu">
             <nav>
                 <ul>
                     <li><a href="index.html"><img src="public/images/logo.svg" alt="Logo Shortly"></a></li>
@@ -21,9 +23,10 @@
                 </ul>
             </nav>
             <ul class="login">
-                <li><a href="#">Login</a></li>
-                <li><a class="signup" href="#">Sign Up</a></li>               
+                <li><a class="log" href="#">Login</a></li>
+                <li><a class="signup" href="#">Sign Up</a></li>            
             </ul>
+            <i class="fas fa-bars"></i>
         </div>
         <div class="container">
             <div class="landing">
@@ -108,6 +111,9 @@
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
         Coded by <a href="https://github.com/kpmnta/" target="_blank">Kai Pimenta</a>.
         </div>
+
+        <script type="module" src="public/scripts/script.js"></script>
+
     </main>
 </body>
 </html>

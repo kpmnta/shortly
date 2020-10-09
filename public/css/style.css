@@ -50,7 +50,8 @@ nav ul li a,
     transition: 0.3s;
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+.login a:hover {
     color: var(--color-secondary-text);
 }
 
@@ -65,6 +66,10 @@ nav ul li a:hover {
 
 .signup:hover {
     background-color: var(--color-button-hover);
+}
+
+.fas {
+    display: none;
 }
 
 .landing {
