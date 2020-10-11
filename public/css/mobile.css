@@ -94,6 +94,7 @@
         margin: 0 auto;
     }
 
+
     nav ul li:not(:first-child),
     .log,
     .signup{
@@ -117,7 +118,7 @@
       top: 0;
     }
 
-    nav ul li.responsive {
+    .menumobile {
       float: none;
       display: block;
       text-align: left;
