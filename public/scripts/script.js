@@ -1,8 +1,10 @@
 function initMenuMobile() {
     const navbar = document.getElementById("navbar");
     if (navbar.className === "menu") {
-        navbar.className += "responsive";
+        navbar.className += " responsive";
+        console.log('abriu');
     } else {
-      navbar.className = "menu-mobile";
+      navbar.className = "menu";
+      console.log('fechou');
     }
 }

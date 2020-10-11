@@ -95,9 +95,7 @@
     }
 
 
-    nav ul li:not(:first-child),
-    .log,
-    .signup{
+    .menu:not(:first-child){
         display: none;
     }
 
@@ -118,7 +116,7 @@
       top: 0;
     }
 
-    .menumobile {
+    .menu {
       float: none;
       display: block;
       text-align: left;
